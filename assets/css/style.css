@@ -78,3 +78,13 @@ footer {
     justify-content: left;
 }
 
+#weather-search {
+    margin-top: 5px;
+    padding: 5px;
+    border-style: none;
+    background-color: darkblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}

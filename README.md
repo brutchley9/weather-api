@@ -21,7 +21,7 @@ Follow link https://github.com/brutchley9/weather-api to access GitHub repositor
 
 <li>https://www.w3schools.com/html/html_forms.asp</li>
 
-<li></li>
+<li>https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</li>
 
 <li></li>
 
