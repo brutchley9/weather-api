@@ -25,7 +25,7 @@ Follow link https://github.com/brutchley9/weather-api to access GitHub repositor
 
 <li>https://www.w3schools.com/howto/howto_css_animate_buttons.asp</li>
 
-<li></li>
+<li>https://stackoverflow.com/questions/10333230/save-input-data-to-localstorage-on-button-click</li>
 
 <li></li>
 

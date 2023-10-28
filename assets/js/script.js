@@ -1,6 +1,6 @@
 var APIKey = "3d313856df69e730b9c4fe7a917b495a";
-
-
+var city = document.getElementById("city-weather");
+var storedCity = localStorage.getItem("city-name");
 
 
 
@@ -8,5 +8,5 @@ var APIKey = "3d313856df69e730b9c4fe7a917b495a";
 
 document.getElementById("weather-button").addEventListener("click", function() {
     console.log("Click! It works :)")
-    let city = document.getElementById("city-weather").value;
+    localStorage.setItem("city-name", city.value);
 });
