@@ -15,7 +15,7 @@ Follow link https://github.com/brutchley9/weather-api to access GitHub repositor
 
 # Resources
 
-<li></li>
+<li>https://dev.to/dawnind/3-ways-to-display-two-divs-side-by-side-3d8b</li>
 
 <li></li>
 
