@@ -17,6 +17,12 @@ Follow link https://github.com/brutchley9/weather-api to access GitHub repositor
 
 <li>https://dev.to/dawnind/3-ways-to-display-two-divs-side-by-side-3d8b</li>
 
+<li>https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys</li>
+
+<li>https://www.w3schools.com/html/html_forms.asp</li>
+
+<li></li>
+
 <li></li>
 
 <li></li>

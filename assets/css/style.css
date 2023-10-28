@@ -25,6 +25,11 @@ h2 {
     text-shadow: 1px 1px black;
 }
 
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 main {
     display: inline-block;
     margin: 1%;
@@ -72,3 +77,4 @@ footer {
     background-color: darkblue;
     justify-content: left;
 }
+
