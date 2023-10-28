@@ -88,3 +88,12 @@ footer {
     font-weight: bold;
     text-shadow: 1px 1px black;
 }
+
+#weather-search:hover {
+    cursor: pointer;
+    background-color: crimson;
+}
+
+#weather-search:active {
+    background-color: brown;
+}

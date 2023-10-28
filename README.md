@@ -23,6 +23,10 @@ Follow link https://github.com/brutchley9/weather-api to access GitHub repositor
 
 <li>https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</li>
 
+<li>https://www.w3schools.com/howto/howto_css_animate_buttons.asp</li>
+
+<li></li>
+
 <li></li>
 
 <li></li>
