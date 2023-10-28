@@ -1,8 +1,9 @@
 html {
-    background-color: azure;
+    background-color: lavender;
 }
 
 header {
+    border-radius: 10px;
     padding-top: 25px;
     padding-bottom: 1px;
     background-color: darkblue;
@@ -31,46 +32,51 @@ h3 {
 }
 
 main {
+    border-radius: 10px;
     display: inline-block;
     margin: 1%;
     padding: 5px;
-    border: 5px;
+    border: 2px;
     border-color: black;
     border-style: solid;
     background-color: white;
 }
 
 aside {
+    border-radius: 10px;
     display: inline-block;
     margin: 1%;
     padding: 5px;
-    border: 5px;
+    border: 2px;
     border-color: black;
     border-style: solid;
     background-color: white;
 }
 
 article {
+    border-radius: 10px;
     display: inline-block;
     margin: 1%;
     padding: 5px;
-    border: 5px;
+    border: 2px;
     border-color: black;
     border-style: solid;
     background-color: white;
 }
 
 section {
+    border-radius: 10px;
     display: inline-block;
     margin: 1%;
     padding: 5px;
-    border: 5px;
+    border: 2px;
     border-color: black;
     border-style: solid;
     background-color: white;
 }
 
 footer {
+    border-radius: 10px;
     padding-top: 2px;
     padding-left: 5px;
     padding-bottom: 25px;
@@ -78,7 +84,8 @@ footer {
     justify-content: left;
 }
 
-#weather-search {
+#weather-button {
+    border-radius: 10px;
     margin-top: 5px;
     padding: 5px;
     border-style: none;
@@ -89,11 +96,11 @@ footer {
     text-shadow: 1px 1px black;
 }
 
-#weather-search:hover {
+#weather-button:hover {
     cursor: pointer;
     background-color: crimson;
 }
 
-#weather-search:active {
+#weather-button:active {
     background-color: brown;
 }

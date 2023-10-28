@@ -1,3 +1,3 @@
-document.getElementById("weather-search").addEventListener("click", function() {
+document.getElementById("weather-button").addEventListener("click", function() {
     console.log("Click! It works :)")
 });
