@@ -45,7 +45,7 @@ document.getElementById("weather-button").addEventListener("click", function() {
     .then(function (data) {
         console.log(data);
         var cityName = document.createElement('p');
-        cityName.textContent = cityName;
+        cityName.textContent = data.name;
         mainEl.append(cityName);
         }
     )
