@@ -47,7 +47,18 @@ document.getElementById("weather-button").addEventListener("click", function() {
         var cityName = document.createElement('p');
         cityName.textContent = data.name;
         mainEl.append(cityName);
-        }
-    )
+
+        var temp = document.createElement('p');
+        temp.textContent = data.main.temp;
+        mainEl.append(temp);
+
+        var humidity = document.createElement('p');
+        humidity.textContent = data.main.humidity;
+        mainEl.append(humidity);
+
+        var windSpeed = document.createElement('p');
+        windSpeed.textContent = data.wind.speed;
+        mainEl.append(windSpeed);
+    })
     //remember to call previousSearch() function here when it is figured out
 });
