@@ -44,11 +44,10 @@ document.getElementById("weather-button").addEventListener("click", function() {
 
     .then(function (data) {
         console.log(data);
-        for (let {name} of data) {
-            var cityName = document.createElement('p');
-            name.innerHTML = name;
-            mainEl.append(cityName);
+        var cityName = document.createElement('p');
+        cityName.textContent = cityName;
+        mainEl.append(cityName);
         }
-    })
+    )
     //remember to call previousSearch() function here when it is figured out
 });
