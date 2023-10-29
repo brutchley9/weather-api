@@ -43,21 +43,23 @@ document.getElementById("weather-button").addEventListener("click", function() {
     })
 
     .then(function (data) {
+
+
         console.log(data);
         var cityName = document.createElement('p');
         cityName.textContent = data.name;
         mainEl.append(cityName);
 
         var temp = document.createElement('p');
-        temp.textContent = data.main.temp;
+        temp.textContent = [data.main.temp] + " Kelvin";
         mainEl.append(temp);
 
         var humidity = document.createElement('p');
-        humidity.textContent = data.main.humidity;
+        humidity.textContent = [data.main.humidity] + "% Humidity";
         mainEl.append(humidity);
 
         var windSpeed = document.createElement('p');
-        windSpeed.textContent = data.wind.speed;
+        windSpeed.textContent = [data.wind.speed] + " mph";
         mainEl.append(windSpeed);
     })
     //remember to call previousSearch() function here when it is figured out
