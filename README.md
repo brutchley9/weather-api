@@ -27,6 +27,6 @@ Follow link https://github.com/brutchley9/weather-api to access GitHub repositor
 
 <li>https://stackoverflow.com/questions/10333230/save-input-data-to-localstorage-on-button-click</li>
 
-<li>https://api.jquery.com/change/</li>
+<li>https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON</li>
 
 <li></li>

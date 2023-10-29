@@ -37,13 +37,20 @@ function previousSearch() {
 document.getElementById("weather-button").addEventListener("click", function() {
     localStorage.setItem("city-name", city.value);
 
+    function removeElement() {
+        const element = document.querySelectorAll('p');
+        element.remove();
+    };
+
+    removeElement();
+
     fetch(requestURL + city.value + "&appid=" + APIKey)
     .then(function (response) {
         return response.json();
     })
+    
 
     .then(function (data) {
-
 
         console.log(data);
         var cityName = document.createElement('p');
