@@ -3,7 +3,7 @@
 For this week's challenge, I will be creating a webpage that can be used to display a five-day forecast of weather for a given city. As a user, when I search for a city using a form on the webpage, I will be able to see the weather results for that city's forecast by utilizing a server-side weather API. Also, any prior searches will be saved in local storage, then displayed again on the page when site is accessed again.
 
 Screenshot of webpage:
-<img src="">
+<img src="assets/images/Screenshot 2023-10-30 213113.png">
 
 ---
 
