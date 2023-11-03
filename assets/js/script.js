@@ -99,7 +99,7 @@ document.getElementById("weather-button").addEventListener("click", function() {
         mainEl.append(humidity);
 
         var windSpeed = document.createElement('p');
-        windSpeed.textContent = [data.wind.speed] + " mph";
+        windSpeed.textContent = [data.wind.speed] + " mph windspeed";
         mainEl.append(windSpeed);
     })
     //remember to call previousSearch() function here when it is figured out
