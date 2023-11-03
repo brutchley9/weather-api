@@ -50,7 +50,8 @@ function populatePrevious() {
         previousEl.append(cityName);
 
         var temp = document.createElement('p');
-        temp.textContent = [data.main.temp] + " Kelvin";
+        var kelvin = 273.15
+        temp.textContent = [(data.main.temp) -= kelvin] + "° Celsius";
         previousEl.append(temp);
 
         var humidity = document.createElement('p');
@@ -89,7 +90,8 @@ document.getElementById("weather-button").addEventListener("click", function() {
         mainEl.append(cityName);
 
         var temp = document.createElement('p');
-        temp.textContent = [data.main.temp] + " Kelvin";
+        var kelvin = 273.15
+        temp.textContent = [(data.main.temp) -= kelvin] + "° Celsius";
         mainEl.append(temp);
 
         var humidity = document.createElement('p');
