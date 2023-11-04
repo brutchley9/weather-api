@@ -8,22 +8,13 @@ var previousEl = document.getElementById("previous-search");
 
 //this function is designed to take previous search value from search bar and save it as a new, created "p" tag within the article element
 
-function previousSearch() {
-    console.log((storedCity));
-    var lastSearch = [];
-    lastSearch.push($("#city-weather")).value;
-    $.each(lastSearch), function(index, value) {
-        const p = document.createElement("p");
-        p.innerHTML = value;
-        document.getElementById("previous-search").appendChild(p);
-    }
-}
 
 
 //below function automatically sets "Lawrence" as a previous search within local storage. This fixed the error messages the console was receiving by populating the url with a city name upon first load
 
 function onLoad() {
     localStorage.setItem("city-name", "Lawrence");
+    console.log("First Load! Search a City!")
 }
 
 onLoad();
@@ -53,7 +44,8 @@ function populatePrevious() {
 
         var temp = document.createElement('p');
         var kelvin = 273.15
-        temp.textContent = Math.round([(data.main.temp) -= kelvin]) + "° Celsius";
+        var celsius = 32
+        temp.textContent = Math.round(([(data.main.temp) - kelvin] * [9 / 5]) + celsius) + "° Fahrenheit";
         previousEl.append(temp);
 
         var humidity = document.createElement('p');
@@ -93,7 +85,8 @@ document.getElementById("weather-button").addEventListener("click", function() {
 
         var temp = document.createElement('p');
         var kelvin = 273.15
-        temp.textContent = Math.round([(data.main.temp) -= kelvin]) + "° Celsius";
+        var celsius = 32
+        temp.textContent = Math.round(([(data.main.temp) - kelvin] * [9 / 5]) + celsius) + "° Fahrenheit";
         mainEl.append(temp);
 
         var humidity = document.createElement('p');
