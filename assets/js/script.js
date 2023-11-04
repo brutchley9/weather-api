@@ -20,16 +20,17 @@ function previousSearch() {
 }
 
 
+//below function automatically sets "Lawrence" as a previous search within local storage. This fixed the error messages the console was receiving by populating the url with a city name upon first load
 
+function onLoad() {
+    localStorage.setItem("city-name", "Lawrence");
+}
 
-
-
-
-
-
+onLoad();
 
 
 //below function gets item from local storage and loads weather information from previous search within "previous search" element when called
+
 
 
 function populatePrevious() {
