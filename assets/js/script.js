@@ -4,9 +4,12 @@ var requestURL = "https://api.openweathermap.org/data/2.5/weather?q="
 var storedCity = localStorage.getItem("city-name", city.value);
 var mainEl = document.getElementById("today-weather-report");
 var previousEl = document.getElementById("previous-search");
-
-
-
+var forecastEl = document.getElementById("five-day-forecast");
+var dayOneEl = document.getElementById("day-one");
+var dayTwoEl = document.getElementById("day-two");
+var dayThreeEl = document.getElementById("day-three");
+var dayFourEl = document.getElementById("day-four");
+var dayFiveEl = document.getElementById("day-five");
 
 
 //below function automatically sets "Lawrence" as a previous search within local storage. This fixed the error messages the console was receiving by populating the url with a city name upon first load
@@ -72,7 +75,7 @@ document.getElementById("weather-button").addEventListener("click", function() {
         return response.json();
     })
 
-//this then statement selects the specific weather object and creates a new 'p' element within main with that data
+//then statement selects the specific weather object and creates a new 'p' element within main with that data
     .then(function (data) {
 
         mainEl.innerHTML = "";
@@ -97,4 +100,15 @@ document.getElementById("weather-button").addEventListener("click", function() {
         mainEl.append(windSpeed);
     })
     //remember to call previousSearch() function here when it is figured out
+
+});
+
+document.getElementById("weather-button").addEventListener("click", function() {
+    
+    dayOneEl.innerHTML = "";
+    dayTwoEl.innerHTML = "";
+    dayThreeEl.innerHTML = "";
+    dayFourEl.innerHTML = "";
+    dayFiveEl.innerHTML = "";
+
 });
