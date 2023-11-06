@@ -10,6 +10,7 @@ var dayTwoEl = document.getElementById("day-two");
 var dayThreeEl = document.getElementById("day-three");
 var dayFourEl = document.getElementById("day-four");
 var dayFiveEl = document.getElementById("day-five");
+var today = dayjs();
 
 
 //below function automatically sets "Lawrence" as a previous search within local storage. This fixed the error messages the console was receiving by populating the url with a city name upon first load
@@ -104,7 +105,7 @@ document.getElementById("weather-button").addEventListener("click", function() {
 });
 
 document.getElementById("weather-button").addEventListener("click", function() {
-    
+
     dayOneEl.innerHTML = "";
     dayTwoEl.innerHTML = "";
     dayThreeEl.innerHTML = "";
