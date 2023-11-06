@@ -6,7 +6,6 @@ var mainEl = document.getElementById("today-weather-report");
 var previousEl = document.getElementById("previous-search");
 
 
-//this function is designed to take previous search value from search bar and save it as a new, created "p" tag within the article element
 
 
 
