@@ -4,13 +4,19 @@ var requestURL = "https://api.openweathermap.org/data/2.5/weather?q="
 var storedCity = localStorage.getItem("city-name", city.value);
 var mainEl = document.getElementById("today-weather-report");
 var previousEl = document.getElementById("previous-search");
+
+var requestURLFiveDays = "https://api.openweathermap.org/data/2.5/forecast"
+
+
+
 var forecastEl = document.getElementById("five-day-forecast");
 var dayOneEl = document.getElementById("day-one");
 var dayTwoEl = document.getElementById("day-two");
 var dayThreeEl = document.getElementById("day-three");
 var dayFourEl = document.getElementById("day-four");
 var dayFiveEl = document.getElementById("day-five");
-var today = dayjs();
+
+
 
 
 //below function automatically sets "Lawrence" as a previous search within local storage. This fixed the error messages the console was receiving by populating the url with a city name upon first load
@@ -105,11 +111,27 @@ document.getElementById("weather-button").addEventListener("click", function() {
 });
 
 document.getElementById("weather-button").addEventListener("click", function() {
+    var lat = JSON.parse(data.object.coord.lat);
+    var lon = JSON.parse(data.object.coord.lon);
+    console.log(lat);
+    console.log(lon);
+
+
+
+
+    //fetch api variables / etc //
+    fetch(requestURLFiveDays + "?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey)
+    .then(function (response) {
+        return response.json();
+    })
+
+
 
     dayOneEl.innerHTML = "";
     dayTwoEl.innerHTML = "";
     dayThreeEl.innerHTML = "";
     dayFourEl.innerHTML = "";
     dayFiveEl.innerHTML = "";
+
 
 });
