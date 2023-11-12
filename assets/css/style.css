@@ -103,9 +103,7 @@ section {
     background-color: white;
 }
 
-#section-and-arcticle {
-    display: flex;
-}
+
 
 footer {
     border-radius: 10px;
@@ -159,4 +157,10 @@ form {
     border-color: black;
     border-style: solid;
     background-color: darkgreen;
+}
+
+@media (max-width: 600px) {
+    #five-day-forecast {
+        flex-direction: column;
+    }
 }
