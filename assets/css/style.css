@@ -140,6 +140,10 @@ form {
     background-color: brown;
 }
 
+#section-and-article {
+    display: flex;
+}
+
 #five-day-forecast {
     display: flex;
 }
@@ -156,11 +160,24 @@ form {
     border: 2px;
     border-color: black;
     border-style: solid;
-    background-color: darkgreen;
+    background-color: darkcyan;
+}
+
+#day-one p,
+#day-two p,
+#day-three p,
+#day-four p,
+#day-five p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 600px) {
     #five-day-forecast {
+        flex-direction: column;
+    }
+
+    #section-and-article {
         flex-direction: column;
     }
 }
