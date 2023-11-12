@@ -109,7 +109,7 @@ document.getElementById("weather-button").addEventListener("click", function() {
         mainEl.append(windSpeed);
 
 
-        
+//everything above this line is for current days weather stats. Everything below is for the five-day forecast
 
         var lat = JSON.parse(data.coord.lat);
         var lon = JSON.parse(data.coord.lon);
@@ -126,8 +126,84 @@ document.getElementById("weather-button").addEventListener("click", function() {
             dayThreeEl.innerHTML = "";
             dayFourEl.innerHTML = "";
             dayFiveEl.innerHTML = "";
-
             console.log(data);
+
+//declaring kelvin and celsius variables "globally" within this function to avoid confusion
+
+            var kelvin = 273.15;
+            var celsius = 32;
+
+            //today's conditions below
+
+            var day1Temp = document.createElement('p');
+            day1Temp.textContent = Math.round(([(data.list[0].main.temp) - kelvin] * [9 / 5]) + celsius) + "° Fahrenheit";
+            dayOneEl.append(day1Temp);
+
+            var day1Humidity = document.createElement('p');
+            day1Humidity.textContent = [data.list[0].main.humidity] + "% Humidity";
+            dayOneEl.append(day1Humidity);
+
+            var day1WindSpeed = document.createElement('p');
+            day1WindSpeed.textContent = [data.list[0].wind.speed] + " mph windspeed";
+            dayOneEl.append(day1WindSpeed);
+
+            //day 2 weather below
+
+            var day2Temp = document.createElement('p');
+            day2Temp.textContent = Math.round(([(data.list[1].main.temp) - kelvin] * [9 / 5]) + celsius) + "° Fahrenheit";
+            dayTwoEl.append(day2Temp);
+
+            var day2Humidity = document.createElement('p');
+            day2Humidity.textContent = [data.list[1].main.humidity] + "% Humidity";
+            dayTwoEl.append(day2Humidity);
+
+            var day2WindSpeed = document.createElement('p');
+            day2WindSpeed.textContent = [data.list[1].wind.speed] + " mph windspeed";
+            dayTwoEl.append(day2WindSpeed);
+
+            //day 3
+
+            var day3Temp = document.createElement('p');
+            day3Temp.textContent = Math.round(([(data.list[2].main.temp) - kelvin] * [9 / 5]) + celsius) + "° Fahrenheit";
+            dayThreeEl.append(day3Temp);
+
+            var day3Humidity = document.createElement('p');
+            day3Humidity.textContent = [data.list[2].main.humidity] + "% Humidity";
+            dayThreeEl.append(day3Humidity);
+
+            var day3WindSpeed = document.createElement('p');
+            day3WindSpeed.textContent = [data.list[2].wind.speed] + " mph windspeed";
+            dayThreeEl.append(day3WindSpeed);
+
+            //day 4
+
+            var day4Temp = document.createElement('p');
+            day4Temp.textContent = Math.round(([(data.list[3].main.temp) - kelvin] * [9 / 5]) + celsius) + "° Fahrenheit";
+            dayFourEl.append(day4Temp);
+
+            var day4Humidity = document.createElement('p');
+            day4Humidity.textContent = [data.list[3].main.humidity] + "% Humidity";
+            dayFourEl.append(day4Humidity);
+
+            var day4WindSpeed = document.createElement('p');
+            day4WindSpeed.textContent = [data.list[3].wind.speed] + " mph windspeed";
+            dayFourEl.append(day4WindSpeed);
+
+            //day 5
+
+            var day5Temp = document.createElement('p');
+            day5Temp.textContent = Math.round(([(data.list[4].main.temp) - kelvin] * [9 / 5]) + celsius) + "° Fahrenheit";
+            dayFiveEl.append(day5Temp);
+
+            var day5Humidity = document.createElement('p');
+            day5Humidity.textContent = [data.list[4].main.humidity] + "% Humidity";
+            dayFiveEl.append(day5Humidity);
+
+            var day5WindSpeed = document.createElement('p');
+            day5WindSpeed.textContent = [data.list[4].wind.speed] + " mph windspeed";
+            dayFiveEl.append(day5WindSpeed);
+
+
         })
 
 
