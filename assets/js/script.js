@@ -69,6 +69,8 @@ function populatePrevious() {
 }
 
 populatePrevious();
+
+
 //below function starts when search button is clicked, logging "it works!" in console to verify functionality, establishes form value as the city to be searched, and saves value in local storage
 
 document.getElementById("weather-button").addEventListener("click", function() {
@@ -105,33 +107,69 @@ document.getElementById("weather-button").addEventListener("click", function() {
         var windSpeed = document.createElement('p');
         windSpeed.textContent = [data.wind.speed] + " mph windspeed";
         mainEl.append(windSpeed);
+
+
+        
+
+        var lat = JSON.parse(data.coord.lat);
+        var lon = JSON.parse(data.coord.lon);
+
+        fetch(requestURLFiveDays + "?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey)
+        .then(function (response) {
+           return response.json();
+        })
+
+        .then(function (data) {
+
+            dayOneEl.innerHTML = "";
+            dayTwoEl.innerHTML = "";
+            dayThreeEl.innerHTML = "";
+            dayFourEl.innerHTML = "";
+            dayFiveEl.innerHTML = "";
+
+            console.log(data);
+        })
+
+
+
+
+
+
+
+
     })
+
+    
+
+
+
+
     //remember to call previousSearch() function here when it is figured out
 
 });
 
-document.getElementById("weather-button").addEventListener("click", function() {
-    var lat = JSON.parse(data.object.coord.lat);
-    var lon = JSON.parse(data.object.coord.lon);
-    console.log(lat);
-    console.log(lon);
+//document.getElementById("weather-button").addEventListener("click", function() {
+//    var lat = JSON.parse(data.object.coord.lat);
+//    var lon = JSON.parse(data.object.coord.lon);
+//    console.log(lat);
+//    console.log(lon);
 
 
 
 
     //fetch api variables / etc //
-    fetch(requestURLFiveDays + "?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey)
-    .then(function (response) {
-        return response.json();
-    })
+//    fetch(requestURLFiveDays + "?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey)
+//    .then(function (response) {
+//        return response.json();
+//    })
 
 
 
-    dayOneEl.innerHTML = "";
-    dayTwoEl.innerHTML = "";
-    dayThreeEl.innerHTML = "";
-    dayFourEl.innerHTML = "";
-    dayFiveEl.innerHTML = "";
+//    dayOneEl.innerHTML = "";
+ //   dayTwoEl.innerHTML = "";
+ //   dayThreeEl.innerHTML = "";
+//    dayFourEl.innerHTML = "";
+//    dayFiveEl.innerHTML = "";
 
 
-});
+//});
