@@ -90,6 +90,13 @@ document.getElementById("weather-button").addEventListener("click", function() {
         mainEl.innerHTML = "";
 
         console.log(data);
+
+        
+        //var todaysDate = document.createElement('h4');
+        //var today = dayjs();
+        //todaysDate.textContent = $('h4').text(today.format('MMM D, YYYY'));
+        //mainEl.append(todaysDate);
+
         var cityName = document.createElement('p');
         cityName.textContent = data.name;
         mainEl.append(cityName);
