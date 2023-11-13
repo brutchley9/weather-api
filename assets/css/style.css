@@ -2,6 +2,8 @@ html {
     background-color: lavender;
 }
 
+/*here I was going to add a background image within the body element, but couldnt figure it out*/
+
 header {
     border-radius: 10px;
     padding-top: 25px;

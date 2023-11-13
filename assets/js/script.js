@@ -231,28 +231,14 @@ document.getElementById("weather-button").addEventListener("click", function() {
 
 });
 
-//document.getElementById("weather-button").addEventListener("click", function() {
-//    var lat = JSON.parse(data.object.coord.lat);
-//    var lon = JSON.parse(data.object.coord.lon);
-//    console.log(lat);
-//    console.log(lon);
 
+var input = document.getElementById("city-weather");
 
+//trying to add "press enter" to activate button
 
-
-    //fetch api variables / etc //
-//    fetch(requestURLFiveDays + "?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey)
-//    .then(function (response) {
-//        return response.json();
-//    })
-
-
-
-//    dayOneEl.innerHTML = "";
- //   dayTwoEl.innerHTML = "";
- //   dayThreeEl.innerHTML = "";
-//    dayFourEl.innerHTML = "";
-//    dayFiveEl.innerHTML = "";
-
-
-//});
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("weather-button").click();
+  }
+}); 

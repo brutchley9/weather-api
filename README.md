@@ -30,3 +30,5 @@ Follow link https://github.com/brutchley9/weather-api to access GitHub repositor
 <li>https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON</li>
 
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round</li>
+
+<li>https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp</li>
