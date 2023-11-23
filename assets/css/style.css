@@ -1,5 +1,7 @@
 html {
-    background-color: lavender;
+    background-image: linear-gradient(to right, turquoise, darkblue);
+    background-repeat: no-repeat;
+    /*background-color: lavender;*/
 }
 
 /*here I was going to add a background image within the body element, but couldnt figure it out*/
